@@ -1,0 +1,40 @@
+{
+  "name": "hexlet-card-game",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --compilers js:babel-core/register",
+    "build": "babel src --out-dir dist",
+    "eslint": "eslint",
+
+    "prepublish": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hexlet-components/js-card-game.git"
+  },
+  "author": "Kirill Mokevnin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hexlet-components/js-card-game/issues"
+  },
+  "homepage": "https://github.com/hexlet-components/js-card-game#readme",
+  "devDependencies": {
+    "babel-plugin-syntax-flow": "*",
+    "babel-plugin-transform-flow-strip-types": "*",
+    "babel-plugin-typecheck": "*",
+    "babel-eslint": "*",
+    "babel-core": "*",
+    "babel-cli": "*",
+    "babel-preset-es2015": "*",
+    "eslint": "*",
+    "eslint-plugin-import": "*",
+    "eslint-config-airbnb": "*",
+    "mocha": "*"
+  },
+  "dependencies": {
+    "hexlet-pairs": "*",
+    "hexlet-pairs-data": "*"
+  }
+}
