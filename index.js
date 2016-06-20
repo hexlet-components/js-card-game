@@ -1,21 +1,23 @@
 // @flow
 
-import * as pairs from 'hexlet-pairs';
 import { cons, l, random } from 'hexlet-pairs-data';
+
+import { getName, damage } from './src/card';
 
 const run = (player1, player2, cards) => {
   const iter = (health1, name1, health2, name2, log) => {
-    if (health1 < 0) {
+    if (health1 <= 0) {
       return cons(`${name1} был убит`, log);
     }
     const card = random(cards);
-    const cardName = pairs.car(card);
-    const damage = pairs.cdr(card)(health2);
-    const newHealth = health2 - damage;
+    const cardName = getName(card);
+    const points = damage(card, health2);
+    const newHealth = health2 - points;
 
     const message = `\nИгрок '${name1}' применил '${cardName}'
-      против '${name2}' и нанес урон '${damage}'`;
-    const newLog = cons(message, log);
+      против '${name2}' и нанес урон '${points}'`;
+    const currentState = l(l(name1, health1), l(name2, health2));
+    const newLog = cons(l(currentState, message), log);
     return iter(newHealth, name2, health1, name1, newLog);
   };
 
