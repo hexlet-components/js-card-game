@@ -1,6 +1,6 @@
-// @flow
+// @ts-check
 
-import { cons, l, random } from 'hexlet-pairs-data';
+import { cons, l, random } from '@hexlet/pairs-data';
 
 import { getName, damage } from './src/card';
 
@@ -24,6 +24,4 @@ const run = (player1, player2, cards) => {
   return iter(10, player1, 10, player2, l('\nНачинаем бой!'));
 };
 
-export const make = (cards: Function) =>
-  (name1: string, name2: string) =>
-    run(name1, name2, cards);
+export default (cards) => (name1, name2) => run(name1, name2, cards);

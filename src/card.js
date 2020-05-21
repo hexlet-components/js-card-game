@@ -1,7 +1,9 @@
 // @ts-check
 
-import * as pairs from 'hexlet-pairs';
-import { l, isEmpty, cons, head, tail } from 'hexlet-pairs-data';
+import * as pairs from '@hexlet/pairs';
+import {
+  l, isEmpty, cons, head, tail,
+} from '@hexlet/pairs-data';
 
 let methods = l();
 
@@ -28,7 +30,6 @@ const getMethod = (obj, methodName) => {
 export const getName = (self) => getMethod(self, 'getName')(self);
 export const damage = (self, health) => getMethod(self, 'damage')(self, health);
 
-export default (type) =>
-  (methodName, f) => {
-    methods = cons(pairs.cons(type, pairs.cons(methodName, f)), methods);
-  };
+export default (type) => (methodName, f) => {
+  methods = cons(pairs.cons(type, pairs.cons(methodName, f)), methods);
+};
