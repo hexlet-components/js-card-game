@@ -21,8 +21,6 @@
   },
   "homepage": "https://github.com/hexlet-components/js-card-game#readme",
   "devDependencies": {
-    "babel-plugin-syntax-flow": "*",
-    "babel-plugin-transform-flow-strip-types": "*",
     "babel-plugin-typecheck": "*",
     "babel-eslint": "*",
     "babel-core": "*",

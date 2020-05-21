@@ -1,4 +1,4 @@
-// @flow
+// @ts-check
 
 import { describe, it } from 'mocha';
 import { l, reverse, toString } from 'hexlet-pairs-data';

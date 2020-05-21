@@ -1,3 +1,5 @@
+// @ts-check
+
 import { cons, car, cdr } from 'hexlet-pairs';
 import definer from './card';
 
