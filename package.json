@@ -1,14 +1,15 @@
 {
   "name": "@hexlet/card-game",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "",
   "main": "dist/index.js",
+  "type": "module",
   "scripts": {
     "documentation": "documentation",
-    "test": "jest --colors",
-    "build": "NODE_ENV=production babel src --out-dir dist --source-maps inline",
-    "eslint": "eslint",
-    "prepublishOnly": "npm run build"
+    "test": "jest --colors"
+  },
+  "jest": {
+    "testEnvironment": "node"
   },
   "repository": {
     "type": "git",
@@ -21,21 +22,16 @@
   },
   "homepage": "https://github.com/hexlet-components/js-card-game#readme",
   "devDependencies": {
-    "@babel/cli": "^7.8.4",
-    "@babel/core": "^7.9.6",
-    "@babel/preset-env": "^7.9.6",
-    "babel-eslint": "^10.1.0",
-    "babel-jest": "^26.0.1",
-    "documentation": "^13.0.0",
-    "eslint": "^7.0.0",
-    "eslint-config-airbnb-base": "^14.1.0",
-    "eslint-plugin-import": "^2.20.2",
-    "eslint-plugin-jest": "^23.13.1",
-    "jest": "^26.0.1",
-    "jest-cli": "^26.0.1"
+    "documentation": "^13.2.1",
+    "eslint": "^7.23.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jest": "^24.3.4",
+    "jest": "^26.6.3",
+    "jest-cli": "^26.6.3"
   },
   "dependencies": {
-    "@hexlet/pairs": "^1.0.14",
-    "@hexlet/pairs-data": "^1.0.10"
+    "@hexlet/pairs": "^1.1.1",
+    "@hexlet/pairs-data": "^1.1.1"
   }
 }
