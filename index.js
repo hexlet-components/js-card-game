@@ -2,7 +2,7 @@
 
 import { cons, l, random } from '@hexlet/pairs-data';
 
-import { getName, damage } from './src/card';
+import { damage, getName } from './src/card';
 
 const run = (player1, player2, cards) => {
   const iter = (health1, name1, health2, name2, log) => {

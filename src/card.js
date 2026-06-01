@@ -1,9 +1,7 @@
 // @ts-check
 
 import * as pairs from '@hexlet/pairs';
-import {
-  l, isEmpty, cons, head, tail,
-} from '@hexlet/pairs-data';
+import { cons, head, isEmpty, l, tail } from '@hexlet/pairs-data';
 
 let methods = l();
 
