@@ -24,11 +24,11 @@
   "homepage": "https://github.com/hexlet-components/js-card-game#readme",
   "devDependencies": {
     "@biomejs/biome": "^2.2.4",
-    "documentation": "^14.0.1",
+    "documentation": "^14.0.3",
     "vitest": "^4.0.15"
   },
   "dependencies": {
-    "@hexlet/pairs": "^1.1.1",
-    "@hexlet/pairs-data": "^1.1.1"
+    "@hexlet/pairs": "^2.0.1",
+    "@hexlet/pairs-data": "^2.0.0"
   }
 }
