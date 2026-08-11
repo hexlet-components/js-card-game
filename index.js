@@ -1,8 +1,8 @@
 // @ts-check
 
-import { cons, l, random } from '@hexlet/pairs-data';
+import { cons, l, random } from "@hexlet/pairs-data";
 
-import { damage, getName } from './src/card';
+import { damage, getName } from "./src/card";
 
 const run = (player1, player2, cards) => {
   const iter = (health1, name1, health2, name2, log) => {
@@ -21,7 +21,7 @@ const run = (player1, player2, cards) => {
     return iter(newHealth, name2, health1, name1, newLog);
   };
 
-  return iter(10, player1, 10, player2, l('\nНачинаем бой!'));
+  return iter(10, player1, 10, player2, l("\nНачинаем бой!"));
 };
 
 export default (cards) => (name1, name2) => run(name1, name2, cards);

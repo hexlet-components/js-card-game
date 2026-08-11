@@ -1,17 +1,14 @@
 // @ts-check
 
-import { car, cdr, cons } from '@hexlet/pairs';
-import definer from './card';
+import { car, cdr, cons } from "@hexlet/pairs";
+import definer from "./card";
 
-const defmethod = definer('PercentCard');
+const defmethod = definer("PercentCard");
 
-export const make = (name, percent) => cons('PercentCard', cons(name, percent));
+export const make = (name, percent) => cons("PercentCard", cons(name, percent));
 
-export const damage = (self, health) =>
-  Math.round(health * (cdr(cdr(self)) / 100));
+export const damage = (self, health) => Math.round(health * (cdr(cdr(self)) / 100));
 
-defmethod('getName', (self) => car(cdr(self)));
+defmethod("getName", (self) => car(cdr(self)));
 
-defmethod('damage', (self, health) =>
-  Math.round(health * (cdr(cdr(self)) / 100)),
-);
+defmethod("damage", (self, health) => Math.round(health * (cdr(cdr(self)) / 100)));
