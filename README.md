@@ -2,6 +2,14 @@
 
 [![github action status](https://github.com/hexlet-components/js-card-game/workflows/Node%20CI/badge.svg)](https://github.com/hexlet-components/js-card-game/actions)
 
+## Зачем это нужно
+
+Карточная игра целиком: колода, раздача, ходы, определение победителя.
+
+Нужна курсам как пример предметной области, которая больше одной функции, но
+ещё помещается в голову. На ней разбирают, как раскладывать логику по модулям и
+где проходят границы между ними.
+
 ## Install
 
 ```bash
