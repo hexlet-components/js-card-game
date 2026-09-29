@@ -35,5 +35,5 @@
     "@hexlet/pairs": "^2.0.1",
     "@hexlet/pairs-data": "^2.0.0"
   },
-  "packageManager": "pnpm@11.24.0"
+  "packageManager": "pnpm@12.6.0"
 }
