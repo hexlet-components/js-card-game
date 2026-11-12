@@ -29,7 +29,7 @@
     "documentation": "^14.0.3",
     "oxfmt": "^0.76.0",
     "oxlint": "^1.91.0",
-    "vitest": "^4.1.12"
+    "vitest": "^5.1.0"
   },
   "dependencies": {
     "@hexlet/pairs": "^2.0.1",
